@@ -1,0 +1,96 @@
+@font-face {
+    font-family: young-serif;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+
+body {
+    font-family: outfit;
+    background: #F1E6DA;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    line-height: 25px;
+}
+
+h1 {
+    font-family: young-serif;
+    color: black;
+    font-size: 4.1vw;
+}
+
+.container img {
+    width: 98%;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: young-serif;
+}
+
+.preperation-time h3{
+    font-family: outfit;
+    color: hsl(332, 51%, 32%);
+}
+
+.preperation-time {
+    background: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 5px 26px;
+    width: 85%;
+    margin: auto;
+}
+
+ul li {
+    margin-bottom: 7px;
+}
+
+.ingredients {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.nutrition table th {
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-left: 25px;
+}
+
+.nutrition td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px;
+    font-weight: bold;
+    color: hsl(332, 51%, 32%);
+}
+
+
+
+
+
+
+

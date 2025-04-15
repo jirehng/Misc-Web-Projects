@@ -1,0 +1,162 @@
+@font-face {
+    font-family: default_font;
+    src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+}
+.card {
+    font-family: default_font;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.result {
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 50%);
+    width: 50%;
+    text-align: center;
+    height: 22em;
+    color: white;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(241, 100%, 89%);
+    margin-top: 25px;
+
+}
+
+.circle {
+    background: rgb(78,33,202);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,1) 50%);
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.score {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.result p {
+    color: hsl(241, 100%, 89%);
+}
+
+.statement {
+    margin-top: 25px;
+}
+
+.statement h2 {
+    margin-bottom: 12px;
+}
+
+.statement p {
+    font-size: 14px;
+    width: 70%;
+    margin: auto;
+}
+
+.summary {
+    width: 50%;
+    height: 22em;
+    border-radius: 25px;
+    box-shadow: 5px 10px 20px 0.1px hsla(256, 72%, 46%, 6%);
+}
+
+.summary h1 {
+    color: hsl(224, 30%, 27%);
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+.reaction, .verbal, .memory, .visual {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    align-items: top;
+    color: grey;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.summary_score {
+    color: black;
+}
+
+.summary img {
+    margin-right: 5px;
+}
+
+.reaction {
+    background: hsla(0, 100%, 67%, 10%);
+}
+
+.memory {
+    background:  hsla(39, 100%, 56%, 10%);
+}
+
+.verbal {
+    background: hsla(166, 100%, 37%, 10%);
+}
+
+.visual {
+    background: hsla(234, 85%, 45%, 10%);
+}
+
+.reaction .category {
+    color: hsl(0, 100%, 67%);
+}
+
+.memory .category {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal .category {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual .category {
+    color: hsl(234, 85%, 45%);
+}
+
+
+.continue {
+    width: 79%;
+    margin-left: 35px;
+    padding: 12px 75px;
+    border-radius: 50px;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: bold;
+}
+
+.continue:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 50%);
+}
