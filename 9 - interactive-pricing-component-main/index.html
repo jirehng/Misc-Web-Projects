@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="background-top"></div>
+    <h1 id="title">
+      Simple, traffic-based pricing
+      <br />
+      <span id="subtitle"
+        >Sign-up for our 30-day trial. No credit card required.</span
+      >
+    </h1>
+
+    <div class="card">
+      <div class="upper">
+        <div>
+          <p>100k Pageviews</p>
+          <p>$16.00 <span class="month">/ month</span></p>
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          step="1"
+          class="slider"
+        />
+        <div class="toggle-container">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle" class="button"></label>
+        </div>
+        <div class="discount"></div>
+      </div>
+      <hr>
+      <div class="lower">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button class="trial">Start my trial</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

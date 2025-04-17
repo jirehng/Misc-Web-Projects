@@ -1,0 +1,188 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: hsl(240, 78%, 98%);
+  text-align: center;
+}
+
+.cards {
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.cards div {
+  border-radius: 8px;
+}
+
+.basic,
+.master {
+  background: white;
+  width: 50%;
+  color: hsl(233, 13%, 49%);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.professional {
+  background: rgb(163, 168, 240);
+  background: linear-gradient(
+    122deg,
+    rgba(163, 168, 240, 1) 16%,
+    rgba(105, 111, 221, 1) 100%
+  );
+  width: 45%;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.professional h2 {
+  color: white;
+  -top: 50;
+}
+
+.master {
+  background: white;
+  width: 50%;
+}
+
+h2 {
+  font-size: 15px;
+  color: hsl(233, 13%, 49%);
+  margin-top: 40px;
+}
+
+.price {
+  font-size: 60px;
+  margin: 30px 0;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.dollar-sign {
+  font-size: 35px;
+}
+
+hr {
+  width: 80%;
+  border-top: 1px solid hsla(234, 14%, 74%, 0);
+}
+
+.learn-more {
+  width: 80%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(163, 168, 240);
+  background: linear-gradient(
+    122deg,
+    rgba(163, 168, 240, 1) 16%,
+    rgba(105, 111, 221, 1) 100%
+  );
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.learn-more:hover {
+  background: transparent;
+  border: 1px solid rgb(105, 111, 221);
+  cursor: pointer;
+  color: rgb(105, 111, 221);
+}
+
+.learn-more-2 {
+  width: 80%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: hsl(237, 63%, 64%);
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.learn-more-2:hover {
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+}
+
+h1 {
+  color: hsl(233, 13%, 49%);
+}
+
+.toggle {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.button {
+  background: rgb(163, 168, 240);
+  background: linear-gradient(
+    122deg,
+    rgba(163, 168, 240, 1) 16%,
+    rgba(105, 111, 221, 1) 100%
+  );
+  height: 80%;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 60px;
+  position: relative;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 23px;
+  height: 23px;
+  border-radius: 200px;
+  margin: 2.5px -22px;
+}
+
+input:checked + .button::before {
+  transform: translateX(21px);
+}
+
+input {
+  display: none;
+}
+
+.toggle p {
+  color: hsl(234, 14%, 74%);
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.bg-top,
+.bg-bottom {
+  position: absolute;
+  width: 20em;
+  z-index: -1;
+}
+
+.bg-top {
+  top: 0px;
+  right: 0px;
+}
+
+.bg-bottom {
+  bottom: 0px;
+  left: 0px;
+}

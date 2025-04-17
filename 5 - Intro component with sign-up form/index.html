@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="text">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div id="login">
+        <div class="ad">
+          <p>
+            <span class="bold">Try it free 7 days </span>then $20/mo. thereafter
+          </p>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="First Name" / class="first-name">
+          <p class="warning-F warning">First name cannot be empty</p>
+          <input type="text" placeholder="Last Name" / class="last-name">
+          <p class="warning-L warning" >Last name cannot be empty</p>
+          <input type="email" placeholder="Email Address" class="email"/>
+          <p class="warning-E warning" >Looks like this is not an email</p>
+          <input type="password" placeholder="Password" class="password"/>
+          <p class="warning-P warning" >Password cannot be empty</p>
+          <button onclick="validate()">Claim Your Free Trial</button>
+          <p class="tos-statement">
+            By clicking the button, you are agreeing to our
+            <span class="tos">Terms and Services</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
